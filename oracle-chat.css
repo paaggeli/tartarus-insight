@@ -1,0 +1,295 @@
+.messenger {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    border: 1px solid #343434;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.071);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.messages {
+    flex: 1;
+    padding: 10px;
+    margin: 0px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.settings-info {
+    padding: 10px;
+}
+
+.settings-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #343434;
+    font-size: 14px;
+}
+
+.left-controls {
+    display: flex;
+    align-items: center;
+}
+
+#model-select, .dropdown {
+    background-color: #343434;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+#model-select option, .dropdown option {
+    background-color: #343434;
+    color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.right-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between the settings button and help link */
+}
+
+#help-link {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#help-link:hover {
+    text-decoration: underline;
+}
+
+.btn-messenger, .btn-messenger:hover:disabled  {
+    background-color: transparent;
+    background-image: none;
+}
+
+.btn-messenger:hover:disabled {
+    border: 1px solid #dadada;
+    cursor: not-allowed;
+}
+
+.btn-messenger:hover {
+    background-image: none;
+    background-color: #555;
+    border: 1px solid #555;
+}
+
+.messages .message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: white;
+    word-wrap: break-word;
+}
+
+.message p {
+    margin-bottom: 0px;
+}
+
+.messages .message.user {
+    width: fit-content;
+    background-color: #434343;
+}
+
+.messages .message.response {
+    max-width: 100%;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: rgba(74, 74, 74, 0.322);
+}
+
+#message-input {
+    flex: 1;
+    outline: none;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: white; 
+    padding: 10px;
+    padding-right: 5px;
+    margin-right: 5px;
+    resize: none; /* Prevent manual resizing */
+    line-height: 1.5; /* Set the line height */
+    max-height: calc(1.5em * 8); /* Maximum height for 10 lines */
+}
+
+#message-input:hover:disabled {
+    cursor: not-allowed;
+}
+
+.scrollbar {
+    /* WebKit-based browsers like Safari and Chrome */
+    scrollbar-width: thin;
+    scrollbar-color: #404040 transparent;
+
+    /* Firefox */
+    -moz-scrollbar-width: thin;
+    -moz-scrollbar-color: #404040 transparent;
+
+    /* Internet Explorer */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -ms-scrollbar-track-color: transparent;
+    -ms-scrollbar-thumb-color: #404040;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #404040;
+    border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.scrollbar::-moz-scrollbar {
+    width: 4px;
+    height: 10px    
+}
+
+.scrollbar::-moz-scrollbar-track {
+    background-color: transparent;
+}
+
+.scrollbar::-moz-scrollbar-thumb {
+    background-color: #404040;
+    border-radius: 5px;
+}
+
+.scrollbar::-moz-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.scrollbar::-ms-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+.scrollbar::-ms-scrollbar-track {
+    background-color: transparent;
+}
+
+.scrollbar::-ms-scrollbar-thumb {
+    background-color: #404040;
+    border-radius: 5px;
+}
+
+.scrollbar::-ms-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #262626;
+    width: 700px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 20px;
+}
+  
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    border-bottom: 1px solid #262626;
+ }
+  
+.modal-header h2 {
+    margin: 0;
+}
+  
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+  
+.modal-body {
+    /* display: flex; */
+    padding: 10px 20px;
+}
+  
+.settings-input {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #171717;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.text-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #ffffff;
+    background: transparent;
+}
+
+.dropdown {
+    display: block;
+    padding: 8px;
+    color: #ffffff;
+    background: transparent;
+    border-radius: 4px;
+}
+
+.modal-footer {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    justify-content: end;
+}

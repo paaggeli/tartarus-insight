@@ -1,25 +1,3 @@
-/* General Styles */
-
-.submit-btn {
-    font-family: "Poppins", serif;
-    display: inline-block;
-    background-color: #ae3f32;
-    background-image: linear-gradient(to bottom, #ae3f32, #c5642e);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: 1px solid #dadada;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.submit-btn:hover {
-    background-color: #893328;
-    background-image: linear-gradient(to bottom, #893328, #ae592a);
-    border: 1px solid #893328;
-    color: #e5e5e5;
-}
-
 /* Nav Menu Styles */
 
 header {

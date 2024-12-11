@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tartarus Insight - Help</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wrapper {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url('images/pattern-marble.webp');
+        }
+
+        .about {
+            padding: 35px 5px;
+            text-align: center;
+        }
+
+        .about > div {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
+    <script src="scripts.js" defer></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVLVTP4422"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PVLVTP4422');
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Banner Section -->
+        <section class="banner">
+            <h1><a href="index.html">Tartarus Insight</a></h1>
+        </section>
+        <!-- Nav Menu Section -->
+        <header>
+            <nav id="navMenu" class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about-section">About</a></li>
+                    <li><a href="index.html#how-it-works-section">How it Works</a></li>
+                    <li><a href="index.html#examples-section">Examples</a></li>
+                    <li><a href="index.html#faq-section">FAQ</a></li>
+                </ul>
+            </nav>
+            <a class="hamburger">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a class="icon close-mobile-menu">
+                <i class="fa fa-times"></i>
+            </a>
+        </header>
+    
+        <!-- About Section -->
+        <section id="about-section" class="about">
+            <h1>Help</h1>
+            <div class="text-container">
+                <p>The Oracle is ready to guide you! Follow these steps to begin your journey:</p>
+                
+                <h2>1. Connect With the Oracle</h2>
+                <p>Click on the “Connect With the Oracle” button.</p>
+                <p>This will reveal a list of AI models currently available on your computer.</p>
+                    
+                <h2>2. Choose Your Model</h2>
+                <p>Select a model from the list. We recommend using any Llama model for the best experience.</p>
+                <p>Once you’ve chosen your model, type your question into the message box and click the “Send” button. The Oracle will respond with its wisdom!</p>
+                    
+                <h2>3. Adjust the Connection (If Needed)</h2>
+                <p>By default, Ollama operates locally at http://localhost:11434.</p>
+                <p>If you’ve manually changed this location, simply click the “Settings” button to update the address. Enter the new location in place of the default, and you’re good to go.</p>
+                <br>
+                <hr>
+                <br>
+                <p><i>If you encounter any issues, please visit our <a href="https://github.com/paaggeli/tartarus-insight/issues">GitHub repository</a> and open an issue. The Oracle values your feedback (and promises not to hold grudges).</i></p>
+            </div>
+            <a href="oracle.html"  class="submit-btn">Ask the Oracle Now</a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 <a href="https://x.com/PanosAngel1">Panos</a> | Built with ❤️ | <a href="policy.html">Privacy policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
