@@ -90,10 +90,18 @@
             <div class="messenger text-container">
                 <div class="settings-info">
                     <div class="left-controls">
-                        <button id="connect-api-button" class="btn btn-messenger">Connect With the Oracle</button>
-                        <select id="model-select" class="hidden">
-                            <option value="">Select a model</option>
+                        <select id="api-dropdown" class="dropdown">
+                            <option value="">Choose an API</option>
+                            <option value="ollama">Ollama</option>
+                            <option value="openai">OpenAI GPT</option>
+                            <option value="claude">Anthropic Claude</option>
                         </select>
+                        <div class="models-wrapper hidden">
+                            <span id="back-arrow" class="back-arrow">←</span>
+                            <select id="model-select">
+                                <option value="">Select a model</option>
+                            </select>
+                        </div>
                         <div id="settings-message" class="error-message"></div>
                     </div>
                     <div class="right-controls">
@@ -130,13 +138,24 @@
                     <label for="api-select">Choose API:</label>
                     <select id="api-select" class="dropdown">
                         <option value="ollama" selected>Ollama</option>
-                        <option value="openai" disabled>OpenAI GPT (Coming Soon)</option>
-                        <option value="anthropic" disabled>Anthropic Claude (Coming Soon)</option>
+                        <option value="openai">OpenAI GPT</option>
+                        <option value="anthropic">Anthropic Claude</option>
                     </select>
                 </div>
+                <!-- Ollama Settings -->
                 <div id="ollama-settings" class="api-settings">
                     <label for="ollama-url">Ollama API Connection:</label>
                     <input type="text" id="ollama-url" class="text-input" value="http://localhost:11434" />
+                </div>
+                <!-- OpenAI Settings -->
+                <div id="openai-settings" class="api-settings hidden">
+                    <label for="openai-api-key">OpenAI API Key:</label>
+                    <input type="text" id="openai-api-key" class="text-input" placeholder="Enter your OpenAI API key" />
+                </div>
+                <!-- Claude Settings -->
+                <div id="claude-settings" class="api-settings hidden">
+                    <label for="claude-api-key">Claude API Key:</label>
+                    <input type="text" id="claude-api-key" class="text-input" placeholder="Enter your Claude API key" />
                 </div>
             </div>
             <div class="modal-footer">
