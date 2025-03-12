@@ -51,14 +51,6 @@ While the Oracle’s wisdom is still brewing, here’s how you can help:
 
 ---
 
-## **Roadmap**  
-1. Finalize the front-end design (HTML/CSS).    
-2. Integrate with Ollama for local AI operations.  
-3. Expand support to OpenAI and Claude for enhanced options.  
-
----
-
-
 ## **Contact**  
 Have questions or ideas? Reach out:  
 - **GitHub Issues**: [Report or Suggest](https://github.com/paaggeli/tartarus-insight/issues)  
