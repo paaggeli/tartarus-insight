@@ -1,6 +1,8 @@
 # **Tartarus Insight**  
 *Escape the Abyss of Business Struggles with the Wisdom of the Oracle.*  
 
+![](images/tartarus2.jpg)
+
 Tartarus Insight is an open-source fun project aimed at helping entrepreneurs navigate their business challenges through the guidance of an AI Oracle.
 
 ---
